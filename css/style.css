@@ -1,0 +1,32 @@
+ body{
+    font-family:Roboto;
+    background-color:#00232B;
+    color: #1EA2FF;
+ }
+
+
+ h1, h2, h3, h4, h5, h6 {
+     font-family:"Grenze Gotisch";
+     font-size:40pt;
+
+ }
+
+ header {
+        text-align:center;
+ }
+
+ #hero, footer {
+     color:#FFFFFF;
+     background-color:#A3A08E;
+     text-align:center;
+     padding:10px;
+ }
+ 
+ #hero img {
+     width:300px;
+
+ }
+
+ #bio {
+     text-align:center; 
+ }
