@@ -3,8 +3,6 @@
     background-color:#00232B;
     color: #9ad4fd;
  }
-
-
  h1, h2, h3, h4, h5, h6 {
      font-family:"Grenze Gotisch";
      font-size:40pt;
@@ -33,9 +31,9 @@
     /*Bio Section*/
 
  #bio {
+     border: 2px groove #9ad4fd;
      text-align: center;
-     
-     
+   
  }
 
  /*Hobbies section*/
@@ -50,15 +48,35 @@
 /*Gallery Section*/
 
 #gallery {
-    padding: center;
     text-align: center;
-    
+    border: 2px groove #9ad4fd;
+    margin-bottom: 2rem;
 }
 
 #gallery img {
 
     max-width: 100%;
 }
+  #gallery figure {
+    text-align: center;
+}
+
+    /* literature */
+#lit {
+     border: 2px groove #9ad4fd;
+     margin-bottom: 2rem;
+
+}
+
+  #lit div {
+       padding: 2rem;
+       max-width: 40rem;
+       margin: 0 auto;
+
+  }
+
+
+
    
 
      
