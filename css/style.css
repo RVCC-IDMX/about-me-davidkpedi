@@ -1,7 +1,7 @@
  body{
     font-family:Roboto;
     background-color:#00232B;
-    color: #1EA2FF;
+    color: #9ad4fd;
  }
 
 
@@ -16,17 +16,53 @@
  }
 
  #hero, footer {
-     color:#FFFFFF;
+     color:#FFFFFF; 
      background-color:#A3A08E;
      text-align:center;
      padding:10px;
+     border-radius: 30px;
+     border: 10px groove #9ad4fd;
  }
- 
- #hero img {
+     /*Hero section*/
+
+
+#hero img {
      width:300px;
 
  }
+    /*Bio Section*/
 
  #bio {
-     text-align:center; 
+     text-align: center;
+     
+     
+ }
+
+ /*Hobbies section*/
+  
+#hobbies {
+    padding: center;
+    text-align: center;
+    box-shadow: #FFFFFF;
+    border-radius: 5px;
+}
+
+/*Gallery Section*/
+
+#gallery {
+    padding: center;
+    text-align: center;
+    
+}
+
+#gallery img {
+
+    max-width: 100%;
+}
+   
+
+     
+ 
+
+     
  }
