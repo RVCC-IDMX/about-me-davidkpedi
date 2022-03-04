@@ -6,11 +6,12 @@
  h1, h2, h3, h4, h5, h6 {
      font-family:"Grenze Gotisch";
      font-size:40pt;
+     text-align: center;
 
  }
 
  header {
-        text-align:center;
+        text-align: center;
  }
 
  #hero, footer {
