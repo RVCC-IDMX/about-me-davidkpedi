@@ -12,6 +12,7 @@
 
  header {
         text-align: center;
+        
  }
 
  #hero, footer {
@@ -19,8 +20,9 @@
      background-color:#A3A08E;
      text-align:center;
      padding:10px;
+     margin: 100px;
      border-radius: 30px;
-     border: 10px groove #9ad4fd;
+     border: 5px groove #9ad4fd;
  }
      /*Hero section*/
 
@@ -31,19 +33,22 @@
  }
     /*Bio Section*/
 
- #bio {
-     border: 2px groove #9ad4fd;
-     text-align: center;
-   
+ #bio ul{
+
+    max-width: 100%;
  }
 
  /*Hobbies section*/
   
-#hobbies {
+#hobbies ul{
+    max-width: 8%;
+    margin-left: auto;
+    margin-right: auto;
     padding: center;
     text-align: center;
     box-shadow: #FFFFFF;
     border-radius: 5px;
+    
 }
 
 /*Gallery Section*/
@@ -66,8 +71,21 @@
 #lit {
      border: 2px groove #9ad4fd;
      margin-bottom: 2rem;
-
+     
 }
+  #lit p::first-letter {
+color:#FFFFFF;
+font-size:6rem;
+float:left;
+line-height: .15;
+margin:0.2em 0.2em 0.2em 0;
+padding: 0.2em;
+border: 3x double rgb(255, 255, 255);
+  }
+
+  #lit p {
+      clear: both;
+  }
 
   #lit div {
        padding: 2rem;
@@ -84,4 +102,4 @@
  
 
      
- }
+ 
