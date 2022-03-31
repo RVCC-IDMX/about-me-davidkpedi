@@ -129,7 +129,6 @@
                     </div>
                  </article>
              </section>
-
             </figure>
         
                 
@@ -139,7 +138,67 @@
 
         </section>
         </section>
+<section id="contact">
 
+    <h2>Contact Me</h2>
+<form name:="contact" method="post">
+<fieldset>
+
+    <legend>Contact Form:</legend>
+
+   <label for="name">Name:</label> 
+
+    <input id="name" type="text"
+    required="true"><br>
+
+    Email:
+    <input name="email" type="email"
+    required="true"><br>
+
+   
+   <label for="phone">Phone Number (Optional)</label>
+   <input id="name" type="phone"
+   required="true"><br>
+
+Phone Type:
+<select name="phone_type">
+<option value="H">Home</optional>
+<option value="C">Cell</option>
+<option value="W">Work</option>
+
+</select><br>
+<label for="message"></label>
+Message:
+<textarea>Hello Stubborn</textarea>
+
+
+</fieldset>
+<legend>Woukld you like a reply?</legend>
+<ul>
+
+    <li>
+        <input id="yes_reply" name="reply"type="radio"
+    value="yes">
+    <label for="yes_reply">Yes</label>
+</li>
+    <li>
+        
+        <input name="no_reply" type="radio"
+    value="No">
+<label for="no_reply">No</label>
+</li>
+
+</ul>
+<fieldset>
+<input type="submit" value="send">
+
+
+
+</fieldset>
+</form>
+
+
+</section>
         </main>
 
     <footer>
