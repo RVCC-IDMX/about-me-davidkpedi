@@ -93,15 +93,36 @@ background-image: radial-gradient(rgb(59, 196, 211),white);
   }
 
   #lit p {
+      padding: 0.3em 0;
       clear: both;
   }
 
   #lit div {
        padding: 2rem;
-       max-width: 40rem;
-       margin: 0 auto;
+       max-width: 100%;
+      columns:20rem;
 
   }
+  @media (min-width :600px) {
+      p {
+ font-size: 1.25rem;
+
+      }
+
+  }
+  @media (min-width:800px) {
+      p{
+          font-size: 1.5rem;
+          height: 1.5;
+      }
+  }
+
+
+    
+   
+
+
+    
 
 
 
