@@ -29,7 +29,7 @@
 
 
 #hero img {
-     width:200px;
+     width:300px;
 
  }
     /*Bio Section*/
@@ -81,6 +81,7 @@
      margin-bottom: 2rem;
      
 }
+/* Dropcaps*/
   #lit p::first-letter {
 color:#FFFFFF;
 font-size:6rem;
@@ -116,30 +117,50 @@ background-image: radial-gradient(rgb(59, 196, 211),white);
           height: 1.5;
       }
 
-
-      form{
-          width: 300px;
-      }
-
-      input{
-        width: 100%;
-    }
-    textarea{
-resize: vertical;
-max-height: 300px ;
+/*contact form*/
+     
+    #formElement {
+display: grid;
+row-gap: .5em;
 
     }
-
-    input,textarea{
-        outline: #9ad4fd;
-        border: 3px soild #9ad4fd;
+    #contact {
+        padding: 1rem;
+        max-width: 600px;
+        margin: 2rem auto;
     }
-
-    input:focus,textarea:focus {
-        box-shadow: 0 0 4px rbga(255,0,0,0.5);
-        border: 3px soild rbg(255,0,0);
+    fieldset{
+        border: 2px solid #9ad4fd;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
-  }
+    legend{
+        background-color: #9ad4fd;
+        color: white;
+        padding:.5em
+    }
+    #contact input, #contact textarea, #contact select, #contact button{
+     padding: .5em;
+     font-size:1rem;
+
+    }
+    #contact ul{
+        list-style: none;
+        padding: 0px;
+    }
+    #contact li{
+        margin:1rem;
+    }
+    #contact button{
+        background-color: #9ad4fd;
+        color: white;
+        border: 1px solid #9ad4fd;
+        max-width:400px;
+        justify-self: center;
+        width: 50%;
+    }
+}
+  
 
 
     

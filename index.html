@@ -141,6 +141,14 @@
 
         </section>
         </section>
+        <style>
+
+            #myVideo {
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+        </style>
 <section id="contact">
 
     <h2>Contact Me</h2>
@@ -148,7 +156,8 @@
 <fieldset>
 
     <legend>Contact Form:</legend>
-<!---- Name -->
+    <div id="formElement">
+  <!---- Name -->
    <label for="name">Name (required):</label> 
 
     <input id="name" type="text"
@@ -177,7 +186,7 @@ Message (optional):
       <textarea>Hello</textarea>
 
 <!--- reply -->
-     </fieldset>
+     
      <legend>Would you like a reply?</legend>
       <ul>
 
@@ -195,12 +204,13 @@ Message (optional):
         </ul>
 
         <!---Submit-->
-      <fieldset>
+     
       <input type="submit" value="send">
+    </div>
+</fieldset>
 
 
-
-     </fieldset>
+     
        </form>
 
 
