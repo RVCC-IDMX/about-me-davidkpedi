@@ -144,76 +144,79 @@
 <section id="contact">
 
     <h2>Contact Me</h2>
-<form name="contact" method="post" data-netlify="true">
+<form id="contactform" method="post" data-netlify="true">
 <fieldset>
 
     <legend>Contact Form:</legend>
-
-   <label for="name">Name:</label> 
+<!---- Name -->
+   <label for="name">Name (required):</label> 
 
     <input id="name" type="text"
     required="true"><br>
-
-    Email:
+<!--- Email -->
+    Email (required):
     <input name="email" type="email"
     required="true"><br>
 
-   
+   <!--- Phone -->
    <label for="phone">Phone Number (Optional)</label>
    <input id="name" type="phone"
    required="true"><br>
-
+<!--- phone type -->
 Phone Type:
-<select name="phone_type">
-<option value="H">Home</optional>
-<option value="C">Cell</option>
-<option value="W">Work</option>
+     <select name="phone_type"> 
+     <option value=""selected>Select phone type</option>
+     <option value="H">Home</optional>
+     <option value="C">Cell</option>
+     <option value="W">Work</option>
 
-</select><br>
-<label for="message"></label>
-Message:
-<textarea>Hello Stubborn</textarea>
+     </select><br>
+      <label for="message"></label>
+      <!--- message -->
+Message (optional):
+      <textarea>Hello</textarea>
 
+<!--- reply -->
+     </fieldset>
+     <legend>Would you like a reply?</legend>
+      <ul>
 
-</fieldset>
-<legend>Woukld you like a reply?</legend>
-<ul>
+         <li>
+         <input type="radio" id="message-yes"
+         name="reply" value="yes a reply please.">
+         <label for="message-yes">Yes a reply would be nice.</label>
+         </li>
+         
+         <li>
+          <input name="reply" type="radio"
+           id="message-no" value="No reply please.">
+          <label for="message-No">No thanks.</label>
+          </li>
+        </ul>
 
-    <li>
-        <input id="yes_reply" name="reply"type="radio"
-    value="yes">
-    <label for="yes_reply">Yes</label>
-</li>
-    <li>
-        
-        <input name="no_reply" type="radio"
-    value="No">
-<label for="no_reply">No</label>
-</li>
-
-</ul>
-<fieldset>
-<input type="submit" value="send">
-
-
-
-</fieldset>
-</form>
+        <!---Submit-->
+      <fieldset>
+      <input type="submit" value="send">
 
 
-</section>
+
+     </fieldset>
+       </form>
+
+
+     </section>
         </main>
 
-    <footer>
+      <footer>
 
 
       ©2022 -David Kpedi
 
-    </footer>
+       </footer>
 
 
 
-    </main>
+     </main>
     
-</body>
-</html>
+ </body>
+  </html>

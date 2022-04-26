@@ -115,6 +115,30 @@ background-image: radial-gradient(rgb(59, 196, 211),white);
           font-size: 1.5rem;
           height: 1.5;
       }
+
+
+      form{
+          width: 300px;
+      }
+
+      input{
+        width: 100%;
+    }
+    textarea{
+resize: vertical;
+max-height: 300px ;
+
+    }
+
+    input,textarea{
+        outline: #9ad4fd;
+        border: 3px soild #9ad4fd;
+    }
+
+    input:focus,textarea:focus {
+        box-shadow: 0 0 4px rbga(255,0,0,0.5);
+        border: 3px soild rbg(255,0,0);
+    }
   }
 
 
