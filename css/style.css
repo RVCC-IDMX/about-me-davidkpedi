@@ -9,6 +9,10 @@
      text-align: center;
 
  }
+ h2{
+     border: groove white;
+  
+ }
 
  header {
         text-align: center;
@@ -19,6 +23,7 @@
  
  .nav-toggle{
      display:none;
+    
  }
  .logo{
     margin:0%;
@@ -40,6 +45,7 @@ margin:0;
 padding:0;
 list-style: none;
 
+
 }
 nav li{
     margin-bottom: 1em;
@@ -47,7 +53,7 @@ nav li{
 }
 
 nav a{
-
+    
     color: #FFFFFF;
     text-decoration: none;
    font-size: 1.2em;
@@ -97,7 +103,7 @@ transition: opacity 250ms ease-in-out 250ms;
 .nav-toggle-label span::after {
     top:7px;
 }
-
+/*hero & footer*/
  #hero, footer {
    
      color:#FFFFFF; 
@@ -114,7 +120,7 @@ transition: opacity 250ms ease-in-out 250ms;
 
 #hero img {
      width:300px;
-    max-width: 100%;
+   margin: 0px;
  }
  
     /*Bio Section*/
@@ -127,7 +133,7 @@ transition: opacity 250ms ease-in-out 250ms;
     text-align: center;
     list-style: none;
     padding: 10px;
- 
+    
  }
 
  /*Hobbies section*/
@@ -150,8 +156,8 @@ transition: opacity 250ms ease-in-out 250ms;
 #gallery{
 
     text-align: center;
-    border: 2px groove #9ad4fd;
     margin-bottom: 2rem;
+   
 }
 
 #gallery img {
@@ -165,7 +171,7 @@ transition: opacity 250ms ease-in-out 250ms;
 
     /* literature */
 #lit {
-     border: 2px groove #9ad4fd;
+     
      margin-bottom: 2rem;
      
 }
@@ -174,22 +180,24 @@ transition: opacity 250ms ease-in-out 250ms;
 color:#FFFFFF;
 font-size:6rem;
 float:left;
-line-height: .20;
-margin:0.2em 0.2em 0.2em 0;
+line-height: 0.5em;
+margin:0.1em 0.1em 0.2em 0.2em;
 padding: 0.5em;
 border: 4px double rgb(255, 255, 255);
 background-image: radial-gradient(#9ad4fd,#A3A08E);
   }
 
   #lit p {
-      padding: 0.3em 0;
+      padding: 0.2em ;
       clear: both;
   }
 
   #lit div {
-       padding: 2rem;
+       padding: 3rem;
        max-width: 100%;
-      columns:20rem;
+       columns:25rem;
+       
+     
 
   }
   @media (min-width :600px) {

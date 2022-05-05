@@ -1,11 +1,16 @@
 # My about me 
 
-My name is David kpedi,
-This project is about a young upcoming street wear brand trying to create a legacy on how he views the world through a visual representation of gorilla art on a piece of fabric or on a plain canvas. the gorilla art represents the struggles we face in this world even as humans, while the word(stubbborn) represents us as humans keeping a strong mentality of not giving up no matter the difficulties we face in life, we always get that surge to keep pushing and never giving up.
- 
+My name is David kpedi
+---
+
+# Netlify Statue badge Link
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c620ad69-e47c-4e72-979b-a0423812b6ae/deploy-status)](https://app.netlify.com/sites/about-me-davidkpedi/deploys)
 ---
-### License & copyright
 
+# Projects Description 
+**About Me Project**
+This is a responsive About me webpage built using HTML and CSS. Through this course i learned the design workflow and some important visual design concepts. working on this about me web page, I also designed the logo for this web page using figma. it was great to work with other students giving and receiving feedbacks.
+---
 
+# License & copyright
  ©David Kpedi, Stubborn Gorilla
