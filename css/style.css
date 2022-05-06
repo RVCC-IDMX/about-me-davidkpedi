@@ -178,9 +178,9 @@ transition: opacity 250ms ease-in-out 250ms;
 /* Dropcaps*/
   #lit p::first-letter {
 color:#FFFFFF;
-font-size:6rem;
+font-size:5rem;
 float:left;
-line-height: 0.5em;
+line-height: 0.6em;
 margin:0.1em 0.1em 0.2em 0.2em;
 padding: 0.5em;
 border: 4px double rgb(255, 255, 255);
