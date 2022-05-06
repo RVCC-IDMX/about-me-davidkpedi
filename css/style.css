@@ -1,7 +1,7 @@
  body{
-    font-family:Roboto;
+    font-family:Georgia;
     background-color:#00232B;
-    color: #9ad4fd;
+    color: white;
  }
  h1, h2, h3, h4, h5, h6 {
      font-family:"Grenze Gotisch";
@@ -9,75 +9,169 @@
      text-align: center;
 
  }
+ h2{
+     border: groove white;
+  
+ }
 
  header {
         text-align: center;
-        
+        background-color: #9ad4fd;
+            
  }
+ /*nav edit*/
+ 
+ .nav-toggle{
+     display:none;
+    
+ }
+ .logo{
+    margin:0%;
+ }
+nav{
+position: absolute;
+text-align: left;
+left: 0;
+background-color: #9ad4fd;
+width: 100%;
+transform: scale(1,0);
+transform-origin: top;
+transition: transform 400ms ease-in-out;
 
+}
+
+nav ul{
+margin:0;
+padding:0;
+list-style: none;
+
+
+}
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a{
+    
+    color: #FFFFFF;
+    text-decoration: none;
+   font-size: 1.2em;
+   text-transform: uppercase;
+  opacity: 1;
+   transition: opacity 250ms ease-in-out;
+
+}
+nav a:hover {
+color:black;
+}
+.nav-toggle:checked ~ nav{
+ transform: scale(1,1);
+}
+.nav-toggle:checked ~ nav{
+opacity: 1;
+transition: opacity 250ms ease-in-out 250ms;
+
+}
+.nav-toggle-label {
+    position: absolute;
+    top:0;
+    left:0;
+    margin-left: 1em;
+    height: 15%;
+    display:flex;
+    align-items: center;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display:block;
+    background: #FFFFFF;
+    height:2px;
+    width:2em;
+    border:2px;
+    position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content:'';
+    position: absolute;
+}
+.nav-toggle-label span::before{
+    bottom:7px;
+}
+.nav-toggle-label span::after {
+    top:7px;
+}
+/*hero & footer*/
  #hero, footer {
    
-     color:#9ad4fd; 
+     color:#FFFFFF; 
      background-color:#A3A08E;
      text-align:center;
      padding:10px;
-     margin: 200px;
+     margin: 0px;
      border-radius: 30px;
      border: 5px groove #9ad4fd;
+   
  }
      /*Hero section*/
 
 
 #hero img {
      width:300px;
-
+   margin: 0px;
  }
+ 
     /*Bio Section*/
 
- #bio li{
-
-    max-width: 20%;
+ #bio{
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: center;
     text-align: center;
-    box-shadow: #FFFFFF;
-    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
     
  }
 
  /*Hobbies section*/
   
-#hobbies ul{
-    max-width: 5%;
+#hobbies{
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: center;
     text-align: center;
-    box-shadow: #FFFFFF;
-    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    
+ 
     
 }
 
 /*Gallery Section*/
 
-#gallery {
+#gallery{
+
     text-align: center;
-    border: 2px groove #9ad4fd;
     margin-bottom: 2rem;
+   
 }
 
 #gallery img {
 
     max-width: 100%;
 }
+
   #gallery figure {
     text-align: center;
 }
 
     /* literature */
 #lit {
-     border: 2px groove #9ad4fd;
+     
      margin-bottom: 2rem;
      
 }
@@ -86,22 +180,24 @@
 color:#FFFFFF;
 font-size:6rem;
 float:left;
-line-height: .20;
-margin:0.2em 0.2em 0.2em 0;
+line-height: 0.5em;
+margin:0.1em 0.1em 0.2em 0.2em;
 padding: 0.5em;
 border: 4px double rgb(255, 255, 255);
-background-image: radial-gradient(rgb(59, 196, 211),white);
+background-image: radial-gradient(#9ad4fd,#A3A08E);
   }
 
   #lit p {
-      padding: 0.3em 0;
+      padding: 0.2em ;
       clear: both;
   }
 
   #lit div {
-       padding: 2rem;
+       padding: 3rem;
        max-width: 100%;
-      columns:20rem;
+       columns:25rem;
+       
+     
 
   }
   @media (min-width :600px) {
@@ -160,6 +256,61 @@ row-gap: .5em;
         width: 50%;
     }
 }
+
+@media screen and  (min-width: 800px) {
+
+#hero {
+    margin:200px;
+}
+
+.nav-toggle-label {
+    display: none;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px,3fr) 1fr;
+}
+.logo {
+    grid-column: 2 / span 3;
+}
+nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex ;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul{
+display:flex;
+justify-content: flex-end;
+border: 1px;
+}
+nav li{
+    margin-left: 3em;
+    margin-bottom: 0;
+}
+nav a{
+    opacity: 1;
+    position: relative;
+}
+nav a::before {
+content: '';
+display: block;
+height: 5px;
+background: black;
+position: absolute;
+bottom:-.75em;
+left: 0;
+right: 0;
+transform: scale(0,1);
+transition: transform ease-in-out 250ms;
+}
+nav a:hover::before {
+    transform: scale(1,1);
+}
+}
+    
+
   
 
 
